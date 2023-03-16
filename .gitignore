@@ -1,0 +1,10 @@
+# dependencies
+/node_modules
+
+# misc
+/server/.env
+
+/serviceAccount.json
+/Product.json
+/flipkart_com-ecommerce_sample.csv
+/flipkart_com-ecommerce_sample.csv.zip
