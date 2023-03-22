@@ -4,8 +4,10 @@ View.settings.set("views", "./routes");
 const nodemailer = require("nodemailer");
 const { Database } = require('../../firebase');
 const Email_template = View.importJsx('./views/Email_template.jsx');
+
+const STRIPE_SECRECT_API_KEY = process.env.STRIPE_SECRECT_API_KEY;
 // This is your test secret API key.
-const stripe = require("stripe")('sk_test_51MlW1ISI7JGkwt8ObjgKc8h5RAZiykPEWzOpvOcGmW5esp9xvgXve3tep9K64FOzGGxetQT3JH6zma7bmoUHHkWe009UPkA8IO');
+const stripe = require("stripe")(STRIPE_SECRECT_API_KEY);
 
 // app.use(express.static("public"));
 // app.use(express.json());
