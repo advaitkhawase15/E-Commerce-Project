@@ -1,6 +1,5 @@
 var router = require('express').Router();
-const { Database } = require('../../firebase');
-
+const { Database } = require('../firebase');
 router.post('/', async (req, res) => {
     const email = req.body.email;
     const message = req.body.message;

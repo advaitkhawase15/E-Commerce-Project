@@ -2,7 +2,7 @@ var router = require('express').Router();
 const { View } = require("grandjs/lib");
 View.settings.set("views", "./routes");
 const nodemailer = require("nodemailer");
-const { Database } = require('../../firebase');
+const { Database } = require('../firebase');
 const Email_template = View.importJsx('./views/Email_template.jsx');
 
 const STRIPE_SECRECT_API_KEY = process.env.STRIPE_SECRECT_API_KEY;

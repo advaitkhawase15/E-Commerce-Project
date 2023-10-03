@@ -1,6 +1,5 @@
 var router = require('express').Router();
-const { Products_db } = require('../../firebase');
-
+const { Products_db } = require('../firebase');
 router.get('/men', async (req, res) => {
     const ref = Products_db.ref('/Products');
     ref.on('value', (Products) => {
